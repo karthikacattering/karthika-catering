@@ -1,217 +1,2054 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Karthika Catering Service — Crafted for Celebrations</title>
-<meta name="description" content="Karthika Catering Service — crafted for celebrations.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--black:#0b0a08;--cream:#f5efe4;--gold:#c8a66a;--gold2:#e0c58d;--muted:#aaa297}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Inter,Arial,sans-serif;overflow-x:hidden}
-a{text-decoration:none;color:inherit}.nav{position:fixed;z-index:100;top:0;left:0;right:0;padding:22px 5%;display:flex;align-items:center;justify-content:space-between;transition:.5s}.nav.scrolled{background:#0b0a08eF;backdrop-filter:blur(16px);padding-block:15px;box-shadow:0 8px 35px #0008}.logo{font:700 2rem "Cormorant Garamond",serif;letter-spacing:1px}.navlinks{display:flex;gap:28px}.navlinks a{font-size:.75rem;letter-spacing:1px;text-transform:uppercase;color:#fff9;transition:.3s}.navlinks a:hover{color:var(--gold2)}
-.hero{height:100vh;min-height:680px;position:relative;overflow:hidden;display:grid;place-items:center;text-align:center;background:#15120d}
-.hero-bg{position:absolute;inset:-5%;background-image:linear-gradient(180deg,#05040355 0%,#05040355 35%,#050403dd 100%),url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=2200&q=85");background-position:center;background-size:cover;animation:kenburns 18s ease-in-out infinite alternate;filter:saturate(.9)}
-.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,transparent 20%,#0008 90%);pointer-events:none}
-.hero-content{position:relative;z-index:2;max-width:1000px;padding:30px;animation:rise 1.2s ease both}.eyebrow{font-size:.68rem;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:var(--gold2)}
-h1,h2,h3{font-family:"Cormorant Garamond",serif}h1{font-size:clamp(4.7rem,13vw,10rem);line-height:.72;letter-spacing:-4px;margin:28px 0 35px}h1 span{display:block;font:600 clamp(.9rem,2.4vw,1.55rem) Inter;letter-spacing:9px;margin-top:28px;color:#eee3d0}
-.hero-copy{max-width:650px;margin:auto;color:#ddd5c9;line-height:1.9;font-size:.95rem}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{padding:14px 23px;border-radius:999px;font-size:.78rem;font-weight:700;transition:.35s}.btn:hover{transform:translateY(-4px)}.btn-gold{background:var(--gold2);color:#17120a;box-shadow:0 15px 40px #c8a66a33}.btn-outline{border:1px solid #fff5;color:white;background:#fff1}
-.scroll{position:absolute;z-index:3;bottom:22px;left:50%;transform:translateX(-50%);font-size:.62rem;letter-spacing:4px;text-transform:uppercase;color:#d8cdbd}.scroll:after{content:"";display:block;width:1px;height:38px;background:var(--gold);margin:10px auto 0}
-.section{max-width:1180px;margin:auto;padding:120px 6%}.cream{background:var(--cream);color:#171511;max-width:none}.cream>.inner,.inner{max-width:1180px;margin:auto}.kicker{font-size:.68rem;text-transform:uppercase;letter-spacing:4px;color:var(--gold);font-weight:700}
-h2{font-size:clamp(3.2rem,7vw,6rem);line-height:.83;letter-spacing:-2px;margin:15px 0 30px}.lead{max-width:700px;color:var(--muted);line-height:1.95}.cream .lead{color:#70695e}
-.story{display:grid;grid-template-columns:1fr 1.05fr;gap:70px;align-items:center}.story-image{min-height:580px;border-radius:2px;background:linear-gradient(180deg,#0001,#0008),url("https://www.matzahcaterers.in/menu_buffet.png") center/cover;box-shadow:30px 30px 0 #c8a66a22;position:relative;overflow:hidden}.story-image:after{content:"KARTHIKA";position:absolute;bottom:25px;left:25px;font:600 4rem "Cormorant Garamond";color:#fff9;letter-spacing:3px}
-.split-title{display:flex;justify-content:space-between;align-items:end;gap:30px}.split-title h2{max-width:700px}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#c8a66a33;margin-top:55px}.service{min-height:300px;padding:30px;background:#11100e;position:relative;overflow:hidden;transition:.5s}.service:before{content:"";position:absolute;inset:0;background:var(--bg) center/cover;opacity:0;transform:scale(1.08);transition:.5s}.service:hover:before{opacity:.35;transform:scale(1)}.service>*{position:relative;z-index:2}.service .num{color:var(--gold);font-size:.65rem;letter-spacing:2px}.service h3{font-size:2.3rem;margin-top:120px;margin-bottom:10px}.service p{color:#999187;line-height:1.7;font-size:.82rem}
-.menu-section{background:#11100e}.menu-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:35px 0}.tab{border:1px solid #c8a66a44;background:transparent;color:#aaa;padding:10px 16px;border-radius:99px;cursor:pointer}.tab.active,.tab:hover{background:var(--gold);color:#17120a}.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#c8a66a33}.dish{background:#11100e;padding:28px 30px;display:flex;justify-content:space-between;gap:20px;align-items:start}.dish h3{font-size:1.7rem;margin:0}.dish p{color:#777169;font-size:.78rem;margin:7px 0 0}.dish span{color:var(--gold2);white-space:nowrap}
-.gallery{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-template-rows:260px 260px;gap:10px;margin-top:50px}.g{border-radius:2px;overflow:hidden;background-size:cover;background-position:center;position:relative;transition:.6s}.g:hover{transform:scale(1.012)}.g:nth-child(1){grid-row:span 2;background-image:linear-gradient(#0000,#0007),url("https://www.matzahcaterers.in/_next/image?q=75&url=%2Fmenu_feast.png&w=3840")}.g:nth-child(2){background-image:url("https://www.matzahcaterers.in/menu_buffet.png")}.g:nth-child(3){background-image:url("https://itsmy.wedding/_next/image?q=75&url=%2Fimages%2Fcategories%2Fcatering-hero.webp&w=1920")}.g:nth-child(4){background-image:url("https://www.matzahcaterers.in/menu_traditional.png")}.g:nth-child(5){background-image:url("https://itsmy.wedding/_next/image?q=75&url=%2Fimages%2Fblog%2Fkochi%2Fkerala-sadya-banana-leaf-kochi-wedding.webp&w=1920")}
-.g:after{content:"View";position:absolute;right:18px;bottom:16px;color:#fff;background:#0008;border:1px solid #fff4;padding:8px 12px;border-radius:99px;font-size:.65rem;opacity:0;transition:.3s}.g:hover:after{opacity:1}
-.planner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.steps{display:grid;gap:10px}.step{padding:20px;border:1px solid #c8a66a33;background:#15130f;display:flex;gap:18px;align-items:center;transition:.3s}.step:hover{border-color:#c8a66a88;transform:translateX(6px)}.step b{color:var(--gold2);font:700 1.5rem "Cormorant Garamond"}.step span{font-size:.85rem;color:#aaa}
-.contact{background:#171510;padding:55px;border:1px solid #c8a66a33;display:grid;grid-template-columns:1fr 1fr;gap:12px}.contact-box{padding:22px;border:1px solid #fff1;background:#fff005}.contact-box label{display:block;color:#8f887c;font-size:.62rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}.contact-box a{font-weight:700}.map{grid-column:1/-1;min-height:210px;border:1px solid #c8a66a33;display:grid;place-items:center;color:#777;letter-spacing:1px}
-.cta{padding:130px 6%;text-align:center;background:linear-gradient(120deg,#b48e50,#e0c58d);color:#18130b}.cta h2{max-width:800px;margin:18px auto}.cta p{max-width:550px;margin:auto;line-height:1.8;color:#4d402b}.cta .btn{display:inline-block;background:#111;color:#fff;margin-top:28px}
-footer{padding:35px 6%;background:#080807;color:#777;display:flex;justify-content:space-between;font-size:.75rem}.wa svg{width:29px;height:29px;display:block}.wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-weight:700;z-index:90;box-shadow:0 15px 35px #0008;animation:pulse 2.4s infinite}
-.reveal{opacity:0;transform:translateY(35px);transition:.9s}.reveal.show{opacity:1;transform:none}
-@keyframes kenburns{to{transform:scale(1.08)}}@keyframes rise{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:none}}@keyframes pulse{50%{transform:scale(1.06)}}
-@media(max-width:900px){.navlinks{display:none}.story,.planner{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:260px 220px 220px}.g:nth-child(1){grid-row:span 2}.menu-grid,.contact{grid-template-columns:1fr}}
-@media(max-width:600px){h1{letter-spacing:-2px}.services,.gallery{grid-template-columns:1fr}.gallery{grid-template-rows:280px 210px 210px 210px 210px}.g:nth-child(1){grid-row:auto}.story-image{min-height:400px}.section{padding:85px 6%}footer{display:block;text-align:center}.nav{padding:16px 5%}}
-</style>
-<style>
-.details-panel{background:#171510;border:1px solid #c8a66a33;color:#f4eee3;padding:34px;border-radius:2px}
-.details-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
-.detail{padding:20px;border:1px solid #ffffff12;background:#1d1b17}
-.detail label{display:block;color:#c8a66a;font-size:.62rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
-.detail a,.detail strong{color:#fff;font-weight:600}
-.placeholder-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}
-.photo-slot{min-height:240px;border:1px dashed #c8a66a66;background:#15130f;display:grid;place-items:center;text-align:center;color:#827a6e;position:relative;transition:.35s}
-.photo-slot:hover{border-color:#e0c58d;transform:translateY(-4px);background:#1b1812}
-.photo-slot b{display:block;color:#d8c08d;font-family:"Cormorant Garamond",serif;font-size:1.7rem;margin-bottom:7px}
-.photo-slot small{font-size:.68rem;letter-spacing:1px}
-.package-grid,.testimonial-grid,.faq-grid,.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
-.package,.testimonial,.faq,.team-card{border:1px solid #c8a66a33;background:#15130f;padding:28px;transition:.35s}
-.package:hover,.testimonial:hover,.faq:hover,.team-card:hover{transform:translateY(-5px);border-color:#c8a66a77}
-.package h3,.testimonial h3,.faq h3,.team-card h3{font-size:2rem;margin:10px 0}
-.package p,.testimonial p,.faq p,.team-card p{color:#918a7f;font-size:.82rem;line-height:1.75}
-.price{color:#e0c58d;font-weight:700;margin-top:18px}
-.upload-note{margin-top:15px;color:#766f64;font-size:.72rem}
-.social-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
-.social{padding:12px 17px;border:1px solid #c8a66a44;border-radius:99px;color:#eee}
-.form-demo{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
-.form-demo input,.form-demo select,.form-demo textarea{width:100%;padding:15px;background:#11100e;border:1px solid #ffffff16;color:#eee;font:inherit}
-.form-demo textarea{min-height:100px;grid-column:1/-1}
-.form-demo button{grid-column:1/-1;padding:15px;background:#c8a66a;border:0;font-weight:700;cursor:pointer}
-@media(max-width:800px){.details-grid,.placeholder-gallery,.package-grid,.testimonial-grid,.faq-grid,.team-grid,.form-demo{grid-template-columns:1fr}.form-demo textarea,.form-demo button{grid-column:auto}}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Karthika Catering Service | Crafted for Celebrations</title>
+
+<meta name="description" content="Karthika Catering Service — traditional Kerala cuisine, wedding catering, Sadya, special events and custom menus.">
+
+<style>
+:root{
+  --black:#080807;
+  --dark:#11100e;
+  --dark2:#171510;
+  --cream:#f5efe4;
+  --gold:#c8a66a;
+  --gold2:#e0c58d;
+  --white:#fff;
+  --muted:#a59d91;
+  --line:#c8a66a33;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--black);
+  color:var(--cream);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button,input,textarea,select{
+  font:inherit;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  padding:22px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:.4s;
+}
+
+.nav.scrolled{
+  background:#080807ee;
+  backdrop-filter:blur(15px);
+  padding-top:14px;
+  padding-bottom:14px;
+  box-shadow:0 10px 35px #0008;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:32px;
+  font-weight:bold;
+  letter-spacing:1px;
+  color:var(--gold2);
+}
+
+.navlinks{
+  display:flex;
+  gap:28px;
+  list-style:none;
+}
+
+.navlinks a{
+  color:#ffffffcc;
+  font-size:12px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  transition:.3s;
+}
+
+.navlinks a:hover{
+  color:var(--gold2);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:100vh;
+  position:relative;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hero-bg{
+  position:absolute;
+  inset:-5%;
+  background:
+    linear-gradient(180deg,#05040355 0%,#05040355 35%,#050403dd 100%),
+    url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=2200&q=85")
+    center/cover;
+  animation:kenburns 18s ease-in-out infinite alternate;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at center,transparent 15%,#0009 90%);
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:1000px;
+  padding:30px;
+  animation:rise 1.2s ease both;
+}
+
+.eyebrow{
+  color:var(--gold2);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:5px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(65px,13vw,150px);
+  line-height:.78;
+  letter-spacing:-5px;
+  margin:30px 0;
+}
+
+.hero h1 span{
+  display:block;
+  font-family:Arial,sans-serif;
+  font-size:clamp(15px,2.5vw,26px);
+  letter-spacing:9px;
+  margin-top:30px;
+  color:#eee3d0;
+}
+
+.hero-copy{
+  max-width:680px;
+  margin:auto;
+  color:#ddd5c9;
+  line-height:1.9;
+  font-size:16px;
+}
+
+.actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:bold;
+  transition:.35s;
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+}
+
+.btn-gold{
+  background:var(--gold2);
+  color:#17120a;
+  box-shadow:0 15px 40px #c8a66a33;
+}
+
+.btn-outline{
+  border:1px solid #fff7;
+  color:#fff;
+  background:#ffffff10;
+}
+
+.scroll{
+  position:absolute;
+  z-index:3;
+  bottom:22px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#d8cdbd;
+}
+
+.scroll::after{
+  content:"";
+  display:block;
+  width:1px;
+  height:38px;
+  background:var(--gold);
+  margin:10px auto 0;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section{
+  max-width:1180px;
+  margin:auto;
+  padding:120px 6%;
+}
+
+.full-section{
+  padding:120px 6%;
+}
+
+.inner{
+  max-width:1180px;
+  margin:auto;
+}
+
+.cream{
+  background:var(--cream);
+  color:#171511;
+  max-width:none;
+}
+
+.kicker{
+  color:var(--gold);
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-weight:bold;
+}
+
+h2{
+  font-family:Georgia,serif;
+  font-size:clamp(42px,7vw,78px);
+  line-height:.9;
+  letter-spacing:-3px;
+  margin:16px 0 30px;
+}
+
+.lead{
+  max-width:720px;
+  color:var(--muted);
+  line-height:1.9;
+}
+
+.cream .lead{
+  color:#70695e;
+}
+
+/* =========================
+   STORY
+========================= */
+
+.story{
+  display:grid;
+  grid-template-columns:1fr 1.05fr;
+  gap:70px;
+  align-items:center;
+}
+
+.story-image{
+  min-height:580px;
+  background:
+    linear-gradient(180deg,#0001,#0008),
+    url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85")
+    center/cover;
+  box-shadow:30px 30px 0 #c8a66a22;
+  position:relative;
+}
+
+.story-image::after{
+  content:"KARTHIKA";
+  position:absolute;
+  bottom:25px;
+  left:25px;
+  font-family:Georgia,serif;
+  font-size:60px;
+  color:#fff9;
+  letter-spacing:3px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--line);
+  margin-top:55px;
+}
+
+.service{
+  min-height:320px;
+  padding:30px;
+  background:#11100e;
+  position:relative;
+  overflow:hidden;
+  transition:.5s;
+}
+
+.service:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 50px #0008;
+}
+
+.service-number{
+  color:var(--gold);
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.service h3{
+  font-family:Georgia,serif;
+  font-size:32px;
+  margin-top:120px;
+}
+
+.service p{
+  color:#999187;
+  font-size:14px;
+  margin-top:10px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu-section{
+  background:#11100e;
+}
+
+.menu-tabs{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:35px 0;
+}
+
+.tab{
+  border:1px solid var(--line);
+  background:transparent;
+  color:#aaa;
+  padding:10px 17px;
+  border-radius:99px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.tab:hover,
+.tab.active{
+  background:var(--gold);
+  color:#17120a;
+}
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:var(--line);
+}
+
+.dish{
+  background:#11100e;
+  padding:28px 30px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:start;
+  transition:.3s;
+}
+
+.dish:hover{
+  background:#191713;
+}
+
+.dish h3{
+  font-family:Georgia,serif;
+  font-size:25px;
+}
+
+.dish p{
+  color:#777169;
+  font-size:13px;
+  margin-top:5px;
+}
+
+.dish span{
+  color:var(--gold2);
+  white-space:nowrap;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+  display:grid;
+  grid-template-columns:1.25fr .75fr .75fr;
+  grid-template-rows:260px 260px;
+  gap:10px;
+  margin-top:50px;
+}
+
+.gallery-item{
+  position:relative;
+  overflow:hidden;
+  background:#15130f;
+  border:1px solid var(--line);
+  transition:.6s;
+}
+
+.gallery-item:hover{
+  transform:scale(1.015);
+}
+
+.gallery-item.large{
+  grid-row:span 2;
+}
+
+.gallery-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:.6s;
+}
+
+.gallery-item:hover .gallery-image{
+  transform:scale(1.08);
+}
+
+.gallery-label{
+  position:absolute;
+  left:18px;
+  bottom:15px;
+  padding:8px 13px;
+  background:#0009;
+  border:1px solid #fff4;
+  border-radius:99px;
+  font-size:11px;
+  letter-spacing:1px;
+}
+
+/* PHOTO DROP AREAS */
+
+.photo-library{
+  margin-top:60px;
+}
+
+.photo-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:30px;
+}
+
+.photo-slot{
+  min-height:230px;
+  border:1px dashed #c8a66a66;
+  background:#15130f;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:25px;
+  transition:.35s;
+}
+
+.photo-slot:hover{
+  border-color:var(--gold2);
+  transform:translateY(-5px);
+  background:#1b1812;
+}
+
+.photo-slot h3{
+  font-family:Georgia,serif;
+  font-size:27px;
+  color:#d8c08d;
+}
+
+.photo-slot p{
+  color:#827a6e;
+  font-size:12px;
+  margin-top:7px;
+}
+
+/* =========================
+   WHY KARTHIKA
+========================= */
+
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:45px;
+}
+
+.card{
+  padding:30px;
+  border:1px solid var(--line);
+  background:#15130f;
+  transition:.35s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#c8a66a88;
+}
+
+.card small{
+  color:var(--gold);
+  letter-spacing:2px;
+}
+
+.card h3{
+  font-family:Georgia,serif;
+  font-size:29px;
+  margin:20px 0 10px;
+}
+
+.card p{
+  color:#918a7f;
+  font-size:14px;
+}
+
+/* =========================
+   PACKAGES
+========================= */
+
+.package-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:45px;
+}
+
+.package{
+  padding:35px;
+  border:1px solid var(--line);
+  background:#15130f;
+  transition:.35s;
+}
+
+.package:hover{
+  transform:translateY(-7px);
+  border-color:#c8a66a88;
+}
+
+.package h3{
+  font-family:Georgia,serif;
+  font-size:34px;
+  margin:15px 0;
+}
+
+.package p{
+  color:#918a7f;
+  font-size:14px;
+}
+
+.price{
+  color:var(--gold2);
+  font-weight:bold;
+  margin-top:20px;
+}
+
+/* =========================
+   EVENT PLANNER
+========================= */
+
+.planner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.steps{
+  display:grid;
+  gap:10px;
+}
+
+.step{
+  padding:22px;
+  border:1px solid var(--line);
+  background:#15130f;
+  display:flex;
+  gap:18px;
+  align-items:center;
+  transition:.3s;
+}
+
+.step:hover{
+  border-color:#c8a66a88;
+  transform:translateX(6px);
+}
+
+.step b{
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  font-size:25px;
+}
+
+.step span{
+  color:#aaa;
+  font-size:14px;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:45px;
+}
+
+.team-card{
+  padding:30px;
+  border:1px solid var(--line);
+  background:#15130f;
+}
+
+.team-card h3{
+  font-family:Georgia,serif;
+  font-size:30px;
+  margin:12px 0;
+}
+
+.team-card p{
+  color:#918a7f;
+  font-size:14px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:45px;
+}
+
+.testimonial{
+  padding:30px;
+  background:#15130f;
+  border:1px solid var(--line);
+  transition:.35s;
+}
+
+.testimonial:hover{
+  transform:translateY(-6px);
+}
+
+.stars{
+  color:var(--gold2);
+  font-size:20px;
+}
+
+.testimonial p{
+  color:#aaa;
+  font-size:14px;
+  margin:18px 0;
+}
+
+.testimonial small{
+  color:#777;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:45px;
+}
+
+.faq{
+  padding:28px;
+  border:1px solid var(--line);
+  background:#15130f;
+}
+
+.faq h3{
+  font-family:Georgia,serif;
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.faq p{
+  color:#918a7f;
+  font-size:14px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-panel{
+  margin-top:45px;
+  padding:35px;
+  background:#171510;
+  border:1px solid var(--line);
+}
+
+.details-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.detail{
+  padding:22px;
+  border:1px solid #ffffff12;
+  background:#1d1b17;
+}
+
+.detail label{
+  display:block;
+  color:var(--gold);
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:7px;
+}
+
+.detail strong,
+.detail a{
+  color:#fff;
+  font-weight:600;
+}
+
+.social-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+
+.social{
+  padding:12px 17px;
+  border:1px solid var(--line);
+  border-radius:99px;
+  color:#eee;
+  transition:.3s;
+}
+
+.social:hover{
+  background:var(--gold);
+  color:#17120a;
+}
+
+.map{
+  min-height:230px;
+  margin-top:25px;
+  border:1px solid var(--line);
+  display:grid;
+  place-items:center;
+  text-align:center;
+  color:#777;
+  padding:20px;
+}
+
+/* =========================
+   ENQUIRY FORM
+========================= */
+
+.enquiry-form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:30px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea{
+  width:100%;
+  padding:15px;
+  background:#11100e;
+  color:#eee;
+  border:1px solid #ffffff16;
+  outline:none;
+}
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus{
+  border-color:var(--gold);
+}
+
+.enquiry-form textarea{
+  min-height:120px;
+  grid-column:1/-1;
+  resize:vertical;
+}
+
+.enquiry-form button{
+  grid-column:1/-1;
+  padding:16px;
+  border:0;
+  background:var(--gold2);
+  color:#17120a;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.enquiry-form button:hover{
+  background:var(--gold);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+  padding:130px 6%;
+  text-align:center;
+  background:linear-gradient(120deg,#b48e50,#e0c58d);
+  color:#18130b;
+}
+
+.cta h2{
+  max-width:850px;
+  margin:20px auto;
+}
+
+.cta p{
+  max-width:600px;
+  margin:auto;
+  line-height:1.8;
+}
+
+.cta .btn{
+  background:#111;
+  color:#fff;
+  margin-top:30px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  padding:35px 6%;
+  background:#080807;
+  color:#777;
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#25d366;
+  color:white;
+  display:grid;
+  place-items:center;
+  font-weight:bold;
+  z-index:999;
+  box-shadow:0 15px 35px #0008;
+  animation:pulse 2.4s infinite;
+}
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(35px);
+  transition:.9s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes kenburns{
+  to{
+    transform:scale(1.08);
+  }
+}
+
+@keyframes rise{
+  from{
+    opacity:0;
+    transform:translateY(35px);
+  }
+  to{
+    opacity:1;
+    transform:none;
+  }
+}
+
+@keyframes pulse{
+  50%{
+    transform:scale(1.07);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:950px){
+
+  .navlinks{
+    display:none;
+  }
+
+  .story,
+  .planner{
+    grid-template-columns:1fr;
+  }
+
+  .services{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .menu-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:260px 220px 220px;
+  }
+
+  .gallery-item.large{
+    grid-row:span 2;
+  }
+
+  .photo-grid,
+  .card-grid,
+  .package-grid,
+  .team-grid,
+  .testimonial-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .section,
+  .full-section{
+    padding:80px 6%;
+  }
+
+  .hero h1{
+    letter-spacing:-2px;
+  }
+
+  .hero h1 span{
+    letter-spacing:4px;
+  }
+
+  .services,
+  .gallery,
+  .photo-grid,
+  .card-grid,
+  .package-grid,
+  .team-grid,
+  .testimonial-grid,
+  .faq-grid,
+  .details-grid,
+  .enquiry-form{
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-rows:280px 210px 210px 210px 210px;
+  }
+
+  .gallery-item.large{
+    grid-row:auto;
+  }
+
+  .enquiry-form textarea,
+  .enquiry-form button{
+    grid-column:auto;
+  }
+
+  footer{
+    display:block;
+    text-align:center;
+  }
+
+  footer div{
+    margin:6px;
+  }
+
+}
+</style>
 </head>
+
 <body>
 
-<nav class="nav" id="nav"><div class="logo">Karthika</div><div class="navlinks"><a href="#story">Story</a><a href="#services">Services</a><a href="#menu">Menu</a><a href="#photos">Gallery</a><a href="#packages">Packages</a><a href="#contact">Contact</a></div></nav>
+<!-- NAVIGATION -->
+
+<nav class="nav" id="nav">
+
+  <a href="#" class="logo">Karthika</a>
+
+  <ul class="navlinks">
+    <li><a href="#story">Story</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+</nav>
+
+
+<!-- HERO -->
 
 <header class="hero">
-<div class="hero-bg"></div>
-<div class="hero-content">
-<div class="eyebrow">Catering • Celebrations • Hospitality</div>
-<h1>KARTHIKA<span>CATERING SERVICE</span></h1>
-<p class="hero-copy">Crafted for celebrations. From traditional Kerala feasts to memorable gatherings, we bring the table to life with food and service made with care.</p>
-<div class="actions"><a class="btn btn-gold" href="https://wa.me/919947354349">Plan Your Event</a><a class="btn btn-outline" href="#gallery">Explore Our Story</a></div>
-</div><div class="scroll">Scroll to discover</div>
+
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      Catering • Celebrations • Hospitality
+    </div>
+
+    <h1>
+      KARTHIKA
+      <span>CATERING SERVICE</span>
+    </h1>
+
+    <p class="hero-copy">
+      Crafted for celebrations. From traditional Kerala feasts
+      to memorable gatherings, we bring the table to life with
+      food and service made with care.
+    </p>
+
+    <div class="actions">
+
+      <a
+        class="btn btn-gold"
+        href="https://wa.me/919947354349"
+        target="_blank">
+        Plan Your Event
+      </a>
+
+      <a
+        class="btn btn-outline"
+        href="#story">
+        Explore Our Story
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="scroll">
+    Scroll to discover
+  </div>
+
 </header>
 
-<section class="section cream reveal" id="story"><div class="inner story"><div><div class="kicker">The Karthika Experience</div><h2>Food is the heart of every gathering.</h2><p class="lead">Karthika Catering Service is designed around one simple idea: when people gather, the food should become part of the memory. This demo is ready for the real story, photographs and signature menu.</p><p><b>Owner — Divakaran K</b></p></div><div class="story-image"></div></div></section>
 
-<section class="section reveal" id="services"><div class="split-title"><div><div class="kicker">What we create</div><h2>Every occasion.<br>A table worth remembering.</h2></div></div>
-<div class="services">
-<article class="service" style="--bg:url('https://www.matzahcaterers.in/_next/image?q=75&url=%2Fmenu_feast.png&w=3840')"><div class="num">01 / WEDDINGS</div><h3>Wedding Catering</h3><p>Elegant food and service for celebrations big and small.</p></article>
-<article class="service" style="--bg:url('https://www.matzahcaterers.in/menu_traditional.png')"><div class="num">02 / TRADITION</div><h3>Kerala Sadya</h3><p>A visual celebration of Kerala's culinary heritage.</p></article>
-<article class="service" style="--bg:url('https://www.matzahcaterers.in/menu_buffet.png')"><div class="num">03 / EVENTS</div><h3>Special Events</h3><p>Family functions, receptions and memorable gatherings.</p></article>
-<article class="service" style="--bg:url('https://itsmy.wedding/_next/image?q=75&url=%2Fimages%2Fcategories%2Fcatering-hero.webp&w=1920')"><div class="num">04 / CUSTOM</div><h3>Custom Menus</h3><p>Build a menu around your guests, occasion and preferences.</p></article>
-</div></section>
+<!-- STORY -->
 
-<section class="section menu-section reveal" id="menu"><div class="kicker">The Menu</div><h2>Tradition, served beautifully.</h2><p class="lead">These are demo categories. Your real dishes and prices can replace them later.</p>
-<div class="menu-tabs"><button class="tab active" data-cat="all">All</button><button class="tab" data-cat="sadya">Sadya</button><button class="tab" data-cat="veg">Vegetarian</button><button class="tab" data-cat="nonveg">Non-Vegetarian</button><button class="tab" data-cat="sweet">Desserts</button></div>
-<div class="menu-grid">
-<div class="dish" data-cat="sadya"><div><h3>Kerala Sadya</h3><p>Traditional banana-leaf feast</p></div><span>Signature</span></div>
-<div class="dish" data-cat="veg"><div><h3>Vegetarian Specials</h3><p>Fresh, festive and flavourful</p></div><span>Classic</span></div>
-<div class="dish" data-cat="nonveg"><div><h3>Non-Vegetarian Feast</h3><p>Custom celebration selections</p></div><span>Custom</span></div>
-<div class="dish" data-cat="sweet"><div><h3>Payasam & Desserts</h3><p>Sweet endings to a memorable meal</p></div><span>Sweet</span></div>
-</div></section>
+<section class="full-section cream reveal" id="story">
 
-<section class="section reveal" id="gallery"><div class="kicker">A Visual Feast</div><h2>Let the food speak.</h2><p class="lead">The final website can use Karthika's own photographs here. These demo images show the intended cinematic layout.</p>
-<div class="gallery"><div class="g"></div><div class="g"></div><div class="g"></div><div class="g"></div><div class="g"></div></div></section>
+  <div class="inner story">
 
-<section class="section reveal"><div class="planner"><div><div class="kicker">Plan your event</div><h2>Tell us what you're celebrating.</h2><p class="lead">A simple enquiry flow can make the website useful, not just beautiful.</p></div><div class="steps"><div class="step"><b>01</b><span>Choose your occasion — wedding, function or special event.</span></div><div class="step"><b>02</b><span>Tell us your guest count and food preferences.</span></div><div class="step"><b>03</b><span>Send the enquiry directly through WhatsApp.</span></div></div></div></section>
+    <div>
 
+      <div class="kicker">
+        The Karthika Experience
+      </div>
+
+      <h2>
+        Food is the heart of every gathering.
+      </h2>
+
+      <p class="lead">
+        Karthika Catering Service is built around one simple idea:
+        when people gather, the food should become part of the memory.
+        From traditional Kerala celebrations to modern gatherings,
+        we aim to serve food with care, warmth and hospitality.
+      </p>
+
+      <br>
+
+      <strong>Owner — Divakaran K</strong>
+
+    </div>
+
+    <div class="story-image"></div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="section reveal" id="services">
+
+  <div class="kicker">
+    What we create
+  </div>
+
+  <h2>
+    Every occasion.<br>
+    A table worth remembering.
+  </h2>
+
+  <div class="services">
+
+    <article class="service">
+      <div class="service-number">01 / WEDDINGS</div>
+      <h3>Wedding Catering</h3>
+      <p>
+        Elegant food and service for weddings,
+        receptions and unforgettable celebrations.
+      </p>
+    </article>
+
+    <article class="service">
+      <div class="service-number">02 / TRADITION</div>
+      <h3>Kerala Sadya</h3>
+      <p>
+        A visual and culinary celebration of Kerala's
+        traditional feast culture.
+      </p>
+    </article>
+
+    <article class="service">
+      <div class="service-number">03 / EVENTS</div>
+      <h3>Special Events</h3>
+      <p>
+        Family functions, receptions, parties and
+        special gatherings.
+      </p>
+    </article>
+
+    <article class="service">
+      <div class="service-number">04 / CUSTOM</div>
+      <h3>Custom Menus</h3>
+      <p>
+        Build a menu around your guests,
+        occasion and preferences.
+      </p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- MENU -->
+
+<section class="section menu-section reveal" id="menu">
+
+  <div class="kicker">
+    The Menu
+  </div>
+
+  <h2>
+    Tradition, served beautifully.
+  </h2>
+
+  <p class="lead">
+    The menu below is a starting structure. We can replace these
+    items with Karthika Catering Service's actual dishes and prices.
+  </p>
+
+  <div class="menu-tabs">
+
+    <button class="tab active" data-cat="all">All</button>
+    <button class="tab" data-cat="sadya">Sadya</button>
+    <button class="tab" data-cat="veg">Vegetarian</button>
+    <button class="tab" data-cat="nonveg">Non-Vegetarian</button>
+    <button class="tab" data-cat="sweet">Desserts</button>
+
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="dish" data-cat="sadya">
+      <div>
+        <h3>Kerala Sadya</h3>
+        <p>Traditional banana-leaf feast</p>
+      </div>
+      <span>Signature</span>
+    </div>
+
+    <div class="dish" data-cat="veg">
+      <div>
+        <h3>Vegetarian Specials</h3>
+        <p>Fresh, festive and flavourful</p>
+      </div>
+      <span>Classic</span>
+    </div>
+
+    <div class="dish" data-cat="nonveg">
+      <div>
+        <h3>Non-Vegetarian Feast</h3>
+        <p>Custom celebration selections</p>
+      </div>
+      <span>Custom</span>
+    </div>
+
+    <div class="dish" data-cat="sweet">
+      <div>
+        <h3>Payasam & Desserts</h3>
+        <p>Sweet endings to a memorable meal</p>
+      </div>
+      <span>Sweet</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="section reveal" id="gallery">
+
+  <div class="kicker">
+    A Visual Feast
+  </div>
+
+  <h2>
+    Let the food speak.
+  </h2>
+
+  <p class="lead">
+    These images are temporary demo photographs.
+    We can replace them with Karthika Catering Service's
+    own food and event photographs.
+  </p>
+
+  <div class="gallery">
+
+    <div class="gallery-item large">
+      <img
+        class="gallery-image"
+        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85"
+        alt="Catering food">
+      <div class="gallery-label">Signature Food</div>
+    </div>
+
+    <div class="gallery-item">
+      <img
+        class="gallery-image"
+        src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+        alt="Traditional food">
+      <div class="gallery-label">Traditional</div>
+    </div>
+
+    <div class="gallery-item">
+      <img
+        class="gallery-image"
+        src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=85"
+        alt="Buffet">
+      <div class="gallery-label">Buffet</div>
+    </div>
+
+    <div class="gallery-item">
+      <img
+        class="gallery-image"
+        src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85"
+        alt="Wedding event">
+      <div class="gallery-label">Celebrations</div>
+    </div>
+
+    <div class="gallery-item">
+      <img
+        class="gallery-image"
+        src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=900&q=85"
+        alt="Event setup">
+      <div class="gallery-label">Events</div>
+    </div>
+
+  </div>
+
+
+  <div class="photo-library">
+
+    <div class="kicker">
+      Photo Library
+    </div>
+
+    <h2>
+      Your food. Your events. Your story.
+    </h2>
+
+    <p class="lead">
+      Dedicated spaces for the real photographs we will add later.
+    </p>
+
+    <div class="photo-grid">
+
+      <div class="photo-slot">
+        <div>
+          <h3>Food Photos</h3>
+          <p>Add Karthika's dish photographs here.</p>
+        </div>
+      </div>
+
+      <div class="photo-slot">
+        <div>
+          <h3>Kerala Sadya</h3>
+          <p>Add traditional Sadya photographs here.</p>
+        </div>
+      </div>
+
+      <div class="photo-slot">
+        <div>
+          <h3>Buffet</h3>
+          <p>Add buffet setup photographs here.</p>
+        </div>
+      </div>
+
+      <div class="photo-slot">
+        <div>
+          <h3>Weddings</h3>
+          <p>Add wedding catering photographs here.</p>
+        </div>
+      </div>
+
+      <div class="photo-slot">
+        <div>
+          <h3>Preparation</h3>
+          <p>Add kitchen and preparation photographs here.</p>
+        </div>
+      </div>
+
+      <div class="photo-slot">
+        <div>
+          <h3>Our Team</h3>
+          <p>Add team photographs here.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY KARTHIKA -->
 
 <section class="section reveal" id="why">
-<div class="kicker">Why Karthika</div><h2>The details that matter.</h2>
-<p class="lead">Replace these demo points with the real strengths and promises of the business.</p>
-<div class="grid">
-<div class="card"><small>QUALITY</small><h3>Fresh Ingredients</h3><p>Add your real ingredient and food-quality promise here.</p></div>
-<div class="card"><small>SERVICE</small><h3>Reliable Team</h3><p>Add information about your catering and service team.</p></div>
-<div class="card"><small>FLEXIBILITY</small><h3>Custom Menus</h3><p>Explain how customers can customize menus for their occasions.</p></div>
-</div>
+
+  <div class="kicker">
+    Why Karthika
+  </div>
+
+  <h2>
+    The details that matter.
+  </h2>
+
+  <p class="lead">
+    These sections can later be replaced with the business's
+    real strengths and promises.
+  </p>
+
+  <div class="card-grid">
+
+    <div class="card">
+      <small>QUALITY</small>
+      <h3>Fresh Ingredients</h3>
+      <p>
+        Add Karthika's real ingredient and food-quality promise here.
+      </p>
+    </div>
+
+    <div class="card">
+      <small>SERVICE</small>
+      <h3>Reliable Team</h3>
+      <p>
+        Add information about the catering and service team.
+      </p>
+    </div>
+
+    <div class="card">
+      <small>FLEXIBILITY</small>
+      <h3>Custom Menus</h3>
+      <p>
+        Explain how customers can customize menus for their occasions.
+      </p>
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- EVENT PLANNER -->
+
+<section class="section reveal">
+
+  <div class="planner">
+
+    <div>
+
+      <div class="kicker">
+        Plan your event
+      </div>
+
+      <h2>
+        Tell us what you're celebrating.
+      </h2>
+
+      <p class="lead">
+        A simple enquiry process makes the website useful,
+        not just beautiful.
+      </p>
+
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <b>01</b>
+        <span>
+          Choose your occasion — wedding, function or special event.
+        </span>
+      </div>
+
+      <div class="step">
+        <b>02</b>
+        <span>
+          Tell us your guest count and food preferences.
+        </span>
+      </div>
+
+      <div class="step">
+        <b>03</b>
+        <span>
+          Send your enquiry directly through WhatsApp.
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PACKAGES -->
 
 <section class="section reveal" id="packages">
-<div class="kicker">Event Packages</div><h2>Choose your experience.</h2>
-<p class="lead">Add your actual packages, prices, guest counts and inclusions here.</p>
-<div class="package-grid">
-<div class="package"><div class="kicker">01</div><h3>Basic</h3><p>Package description, guest range and included services.</p><div class="price">Add price</div></div>
-<div class="package"><div class="kicker">02</div><h3>Standard</h3><p>Package description, guest range and included services.</p><div class="price">Add price</div></div>
-<div class="package"><div class="kicker">03</div><h3>Premium</h3><p>Package description, guest range and included services.</p><div class="price">Add price</div></div>
-</div>
+
+  <div class="kicker">
+    Event Packages
+  </div>
+
+  <h2>
+    Choose your experience.
+  </h2>
+
+  <p class="lead">
+    Actual packages, guest counts, prices and inclusions
+    can be added here later.
+  </p>
+
+  <div class="package-grid">
+
+    <div class="package">
+      <div class="kicker">01</div>
+      <h3>Basic</h3>
+      <p>
+        Suitable for smaller gatherings and simple celebrations.
+      </p>
+      <div class="price">Price on enquiry</div>
+    </div>
+
+    <div class="package">
+      <div class="kicker">02</div>
+      <h3>Standard</h3>
+      <p>
+        A balanced catering experience for family functions
+        and celebrations.
+      </p>
+      <div class="price">Price on enquiry</div>
+    </div>
+
+    <div class="package">
+      <div class="kicker">03</div>
+      <h3>Premium</h3>
+      <p>
+        A complete catering experience for larger
+        and special occasions.
+      </p>
+      <div class="price">Price on enquiry</div>
+    </div>
+
+  </div>
+
 </section>
 
-<section class="section reveal" id="photos">
-<div class="kicker">Photo Library</div><h2>Your food. Your events. Your story.</h2>
-<p class="lead">These are dedicated drop spaces for the real photographs you add later.</p>
-<div class="placeholder-gallery">
-<div class="photo-slot"><div><b>Food Photos</b><small>Drop / add dish photographs here</small></div></div>
-<div class="photo-slot"><div><b>Sadya</b><small>Traditional feast photographs</small></div></div>
-<div class="photo-slot"><div><b>Buffet</b><small>Buffet setup photographs</small></div></div>
-<div class="photo-slot"><div><b>Weddings</b><small>Wedding/event photographs</small></div></div>
-<div class="photo-slot"><div><b>Preparation</b><small>Kitchen / preparation photos</small></div></div>
-<div class="photo-slot"><div><b>Our Team</b><small>Catering team photographs</small></div></div>
-</div>
-<p class="upload-note">Demo slots only — we'll replace these with actual image files when you provide them.</p>
-</section>
+
+<!-- TEAM -->
 
 <section class="section reveal" id="team">
-<div class="kicker">Our Team</div><h2>The people behind the table.</h2>
-<p class="lead">Optional section for the owner, chefs, service team or family members involved in the business.</p>
-<div class="team-grid">
-<div class="team-card"><div class="kicker">OWNER</div><h3>Divakaran K</h3><p>Add a short introduction here.</p></div>
-<div class="team-card"><div class="kicker">CHEF</div><h3>Add Name</h3><p>Add role and short introduction.</p></div>
-<div class="team-card"><div class="kicker">SERVICE</div><h3>Add Name</h3><p>Add role and short introduction.</p></div>
-</div>
+
+  <div class="kicker">
+    Our Team
+  </div>
+
+  <h2>
+    The people behind the table.
+  </h2>
+
+  <p class="lead">
+    Add the real owner, chefs and service team details
+    when the information is ready.
+  </p>
+
+  <div class="team-grid">
+
+    <div class="team-card">
+      <div class="kicker">OWNER</div>
+      <h3>Divakaran K</h3>
+      <p>
+        Owner of Karthika Catering Service.
+      </p>
+    </div>
+
+    <div class="team-card">
+      <div class="kicker">CHEF</div>
+      <h3>Chef Profile</h3>
+      <p>
+        Add chef name and introduction here.
+      </p>
+    </div>
+
+    <div class="team-card">
+      <div class="kicker">SERVICE</div>
+      <h3>Service Team</h3>
+      <p>
+        Add service team information here.
+      </p>
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- REVIEWS -->
 
 <section class="section reveal" id="reviews">
-<div class="kicker">Customer Stories</div><h2>What people remember.</h2>
-<p class="lead">Add genuine customer reviews here once you have them.</p>
-<div class="testimonial-grid">
-<div class="testimonial"><h3>“★★★★★”</h3><p>Add a real customer review.</p><small>Customer Name • Event</small></div>
-<div class="testimonial"><h3>“★★★★★”</h3><p>Add a real customer review.</p><small>Customer Name • Event</small></div>
-<div class="testimonial"><h3>“★★★★★”</h3><p>Add a real customer review.</p><small>Customer Name • Event</small></div>
-</div>
+
+  <div class="kicker">
+    Customer Stories
+  </div>
+
+  <h2>
+    What people remember.
+  </h2>
+
+  <p class="lead">
+    Genuine customer reviews can be added here once available.
+  </p>
+
+  <div class="testimonial-grid">
+
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>
+        Add a genuine customer review here.
+      </p>
+      <small>Customer Name • Event</small>
+    </div>
+
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>
+        Add a genuine customer review here.
+      </p>
+      <small>Customer Name • Event</small>
+    </div>
+
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>
+        Add a genuine customer review here.
+      </p>
+      <small>Customer Name • Event</small>
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- FAQ -->
 
 <section class="section reveal" id="faq">
-<div class="kicker">FAQ</div><h2>Questions, answered.</h2>
-<div class="faq-grid">
-<div class="faq"><h3>How early should I book?</h3><p>Add your real booking guidance.</p></div>
-<div class="faq"><h3>Can menus be customized?</h3><p>Add your actual customization policy.</p></div>
-<div class="faq"><h3>Do you provide service staff?</h3><p>Add your service-staff details.</p></div>
-<div class="faq"><h3>Do you cater outside the area?</h3><p>Add your service-area details.</p></div>
-<div class="faq"><h3>Is there a minimum guest count?</h3><p>Add your actual minimum, if any.</p></div>
-<div class="faq"><h3>How does advance booking work?</h3><p>Add your real booking and advance-payment process.</p></div>
-</div>
+
+  <div class="kicker">
+    FAQ
+  </div>
+
+  <h2>
+    Questions, answered.
+  </h2>
+
+  <div class="faq-grid">
+
+    <div class="faq">
+      <h3>How early should I book?</h3>
+      <p>
+        Add the real booking guidance here.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>Can menus be customized?</h3>
+      <p>
+        Add the actual customization policy here.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>Do you provide service staff?</h3>
+      <p>
+        Add service-staff details here.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>Do you cater outside the area?</h3>
+      <p>
+        Add the actual service-area details here.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>Is there a minimum guest count?</h3>
+      <p>
+        Add the actual minimum guest count here.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>How does advance booking work?</h3>
+      <p>
+        Add the real booking and payment process here.
+      </p>
+    </div>
+
+  </div>
+
 </section>
 
+
+<!-- CONTACT -->
 
 <section class="section reveal" id="contact">
-<div class="kicker">Get in touch</div><h2>Let's plan your next gathering.</h2>
-<div class="details-panel">
-<div class="details-grid">
-<div class="detail"><label>Owner</label><strong>Divakaran K</strong></div>
-<div class="detail"><label>Phone</label><a href="tel:+919947354349">9947354349</a></div>
-<div class="detail"><label>WhatsApp</label><a href="https://wa.me/919947354349">9947354349</a></div>
-<div class="detail"><label>Email</label><a href="mailto:karthikacattering@gmail.com">karthikacattering@gmail.com</a></div>
-<div class="detail"><label>GPay</label><strong>9947354349</strong></div>
-<div class="detail"><label>Address</label><strong>Sarvajana High School, Puthucode, Karapotta, Near Annapoorneswari Temple, PIN 678687</strong></div>
-</div>
-<div class="social-row"><a class="social" href="#">Instagram — add link</a><a class="social" href="#">Facebook — add link</a><a class="social" href="#">YouTube — add link</a></div>
-<div class="map">Google Maps — exact location will be added here</div>
-<form class="form-demo" onsubmit="return false">
-<input placeholder="Your name">
-<input placeholder="Phone number">
-<select><option>Event type</option><option>Wedding</option><option>Family Function</option><option>Corporate</option><option>Other</option></select>
-<input placeholder="Number of guests">
-<input placeholder="Preferred event date">
-<textarea placeholder="Tell us about your event"></textarea>
-<button>Send Enquiry on WhatsApp</button>
-</form>
-</div>
+
+  <div class="kicker">
+    Get in touch
+  </div>
+
+  <h2>
+    Let's plan your next gathering.
+  </h2>
+
+  <div class="contact-panel">
+
+    <div class="details-grid">
+
+      <div class="detail">
+        <label>Owner</label>
+        <strong>Divakaran K</strong>
+      </div>
+
+      <div class="detail">
+        <label>Phone</label>
+        <a href="tel:+919947354349">
+          9947354349
+        </a>
+      </div>
+
+      <div class="detail">
+        <label>WhatsApp</label>
+        <a href="https://wa.me/919947354349" target="_blank">
+          9947354349
+        </a>
+      </div>
+
+      <div class="detail">
+        <label>Email</label>
+        <a href="mailto:karthikacattering@gmail.com">
+          karthikacattering@gmail.com
+        </a>
+      </div>
+
+      <div class="detail">
+        <label>GPay</label>
+        <strong>9947354349</strong>
+      </div>
+
+      <div class="detail">
+        <label>Address</label>
+        <strong>
+          Sarvajana High School, Puthucode, Karapotta,
+          Near Annapoorneswari Temple, PIN 678687
+        </strong>
+      </div>
+
+    </div>
+
+
+    <div class="social-row">
+
+      <a class="social" href="#">
+        Instagram
+      </a>
+
+      <a class="social" href="#">
+        Facebook
+      </a>
+
+      <a class="social" href="#">
+        YouTube
+      </a>
+
+    </div>
+
+
+    <div class="map">
+      Google Maps location will be added here.
+    </div>
+
+
+    <!-- ENQUIRY FORM -->
+
+    <form class="enquiry-form" id="enquiryForm">
+
+      <input
+        id="name"
+        type="text"
+        placeholder="Your name"
+        required>
+
+      <input
+        id="phone"
+        type="tel"
+        placeholder="Phone number"
+        required>
+
+      <select id="eventType" required>
+
+        <option value="">
+          Event type
+        </option>
+
+        <option>
+          Wedding
+        </option>
+
+        <option>
+          Kerala Sadya
+        </option>
+
+        <option>
+          Family Function
+        </option>
+
+        <option>
+          Corporate Event
+        </option>
+
+        <option>
+          Other
+        </option>
+
+      </select>
+
+      <input
+        id="guests"
+        type="number"
+        placeholder="Number of guests">
+
+      <input
+        id="date"
+        type="date">
+
+      <textarea
+        id="message"
+        placeholder="Tell us about your event"></textarea>
+
+      <button type="submit">
+        Send Enquiry on WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+
 </section>
 
 
-<section class="cta"><div class="eyebrow">Your occasion. Our table.</div><h2>EVERY CELEBRATION DESERVES A GREAT TABLE.</h2><p>Tell Karthika Catering Service about your event and start planning.</p><a class="btn" href="https://wa.me/919947354349?text=Hi%20Karthika%20Catering%20Service%2C%20I%20would%20like%20to%20enquire%20about%20catering.">Start an Enquiry</a></section>
+<!-- FINAL CTA -->
 
-<footer><span>Karthika Catering Service</span><span>Owner: Divakaran K</span></footer>
-<a class="wa" href="https://wa.me/919947354349" aria-label="Chat with Karthika Catering Service on WhatsApp">
-<svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M19.11 17.33c-.27-.14-1.58-.78-1.83-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.12-.41-2.13-1.31-.79-.7-1.32-1.57-1.48-1.84-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.46-.84-2-.22-.52-.45-.45-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.57.66.21 1.26.18 1.73.11.53-.08 1.58-.65 1.8-1.27.23-.62.23-1.15.16-1.27-.07-.11-.25-.18-.52-.32M16.01 26.67h-.01a10.63 10.63 0 0 1-5.42-1.49l-.39-.23-4.03 1.06 1.08-3.93-.25-.4a10.64 10.64 0 1 1 9.02 4.99m0-23.17C9.24 3.5 3.73 9.01 3.73 15.78c0 2.16.56 4.27 1.62 6.13L3.63 27.5l5.73-1.5a12.23 12.23 0 0 0 6.65 1.96h.01c6.77 0 12.28-5.51 12.28-12.28S22.78 3.5 16.01 3.5"/></svg>
+<section class="cta">
+
+  <div class="eyebrow">
+    Your occasion. Our table.
+  </div>
+
+  <h2>
+    EVERY CELEBRATION DESERVES A GREAT TABLE.
+  </h2>
+
+  <p>
+    Tell Karthika Catering Service about your event
+    and start planning.
+  </p>
+
+  <a
+    class="btn"
+    href="https://wa.me/919947354349?text=Hi%20Karthika%20Catering%20Service%2C%20I%20would%20like%20to%20enquire%20about%20catering."
+    target="_blank">
+    Start an Enquiry
+  </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div>
+    Karthika Catering Service
+  </div>
+
+  <div>
+    Owner: Divakaran K
+  </div>
+
+  <div>
+    Crafted for Celebrations
+  </div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/919947354349"
+  target="_blank"
+  aria-label="Chat with Karthika Catering Service on WhatsApp">
+  WA
 </a>
 
+
 <script>
-const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>45));
-const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.1});
-document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
-document.querySelectorAll('.tab').forEach(tab=>tab.addEventListener('click',()=>{
- document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));tab.classList.add('active');
- const cat=tab.dataset.cat;
- document.querySelectorAll('.dish').forEach(d=>d.style.display=(cat==='all'||d.dataset.cat===cat)?'flex':'none');
-}));
+
+/* NAVIGATION SCROLL EFFECT */
+
+const nav = document.getElementById("nav");
+
+window.addEventListener("scroll", function(){
+
+  if(window.scrollY > 45){
+    nav.classList.add("scrolled");
+  }else{
+    nav.classList.remove("scrolled");
+  }
+
+});
+
+
+/* SCROLL REVEAL */
+
+const observer = new IntersectionObserver(
+
+  entries => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting){
+        entry.target.classList.add("show");
+      }
+
+    });
+
+  },
+
+  {
+    threshold:0.1
+  }
+
+);
+
+document
+  .querySelectorAll(".reveal")
+  .forEach(element => observer.observe(element));
+
+
+/* MENU FILTER */
+
+const tabs = document.querySelectorAll(".tab");
+const dishes = document.querySelectorAll(".dish");
+
+tabs.forEach(tab => {
+
+  tab.addEventListener("click", function(){
+
+    tabs.forEach(item =>
+      item.classList.remove("active")
+    );
+
+    this.classList.add("active");
+
+    const category = this.dataset.cat;
+
+    dishes.forEach(dish => {
+
+      if(
+        category === "all" ||
+        dish.dataset.cat === category
+      ){
+
+        dish.style.display = "flex";
+
+      }else{
+
+        dish.style.display = "none";
+
+      }
+
+    });
+
+  });
+
+});
+
+
+/* WHATSAPP ENQUIRY FORM */
+
+const enquiryForm =
+  document.getElementById("enquiryForm");
+
+enquiryForm.addEventListener("submit", function(event){
+
+  event.preventDefault();
+
+  const name =
+    document.getElementById("name").value;
+
+  const phone =
+    document.getElementById("phone").value;
+
+  const eventType =
+    document.getElementById("eventType").value;
+
+  const guests =
+    document.getElementById("guests").value;
+
+  const date =
+    document.getElementById("date").value;
+
+  const message =
+    document.getElementById("message").value;
+
+  const whatsappMessage =
+`Hi Karthika Catering Service,
+
+I would like to enquire about catering.
+
+Name: ${name}
+Phone: ${phone}
+Event: ${eventType}
+Guests: ${guests}
+Date: ${date}
+
+Event details:
+${message}`;
+
+  const whatsappURL =
+    "https://wa.me/919947354349?text=" +
+    encodeURIComponent(whatsappMessage);
+
+  window.open(whatsappURL, "_blank");
+
+});
+
 </script>
+
 </body>
 </html>
