@@ -1487,6 +1487,85 @@ footer{
     padding-left:5%;
     padding-right:5%;
   }
+}/* MOBILE WIDTH SAFETY FIX */
+@media (max-width: 650px){
+
+  html{
+    width:100%;
+    min-width:0;
+  }
+
+  body{
+    width:100%;
+    min-width:0;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  .hero,
+  .section,
+  .full-section,
+  .cta,
+  footer{
+    width:100%;
+    max-width:100%;
+  }
+
+  .inner{
+    width:100%;
+    max-width:100%;
+  }
+
+  .hero-content{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+
+  .hero h1{
+    width:100%;
+    max-width:100%;
+  }
+
+  .story,
+  .services,
+  .menu-grid,
+  .gallery,
+  .photo-grid,
+  .card-grid,
+  .package-grid,
+  .planner,
+  .team-grid,
+  .testimonial-grid,
+  .faq-grid,
+  .details-grid,
+  .enquiry-form{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+
+  .service,
+  .dish,
+  .gallery-item,
+  .photo-slot,
+  .card,
+  .package,
+  .team-card,
+  .testimonial,
+  .faq,
+  .detail,
+  .step,
+  .contact-panel{
+    min-width:0;
+  }
+
+  .enquiry-form input,
+  .enquiry-form select,
+  .enquiry-form textarea{
+    min-width:0;
+    max-width:100%;
+  }
 }</style>
 </head>
 
