@@ -964,43 +964,6 @@ footer{
    MOBILE
 ========================= */
 
-@media(max-width:950px){
-
-  .navlinks{
-    display:none;
-  }
-
-  .story,
-  .planner{
-    grid-template-columns:1fr;
-  }
-
-  .services{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .menu-grid{
-    grid-template-columns:1fr;
-  }
-
-  .gallery{
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:260px 220px 220px;
-  }
-
-  .gallery-item.large{
-    grid-row:span 2;
-  }
-
-  .photo-grid,
-  .card-grid,
-  .package-grid,
-  .team-grid,
-  .testimonial-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-}
 
 @media (max-width: 650px){
 
@@ -1274,7 +1237,257 @@ footer{
   }
 
 }
-</style>
+/* FINAL MOBILE FIX */
+@media (max-width: 650px){
+
+  html, body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  body{
+    font-size:15px;
+  }
+
+  /* NAVIGATION */
+  .nav{
+    padding:14px 5%;
+    min-height:70px;
+    flex-wrap:wrap;
+  }
+
+  .logo{
+    font-size:24px;
+    font-weight:900;
+  }
+
+  .navlinks{
+    display:flex !important;
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px 16px;
+    margin-top:10px;
+    padding:0;
+  }
+
+  .navlinks li a{
+    font-size:11px;
+    white-space:nowrap;
+  }
+
+  /* HERO */
+  .hero{
+    min-height:100svh;
+    width:100%;
+    padding:110px 6% 70px;
+  }
+
+  .hero-content{
+    width:100%;
+    max-width:100%;
+  }
+
+  .hero h1{
+    font-size:clamp(48px,16vw,82px);
+    line-height:.9;
+    letter-spacing:-2px;
+    max-width:100%;
+    word-break:normal;
+  }
+
+  .hero h1 span{
+    font-size:clamp(12px,3.5vw,18px);
+    letter-spacing:clamp(3px,1.2vw,6px);
+    white-space:nowrap;
+  }
+
+  .hero-copy{
+    max-width:100%;
+    font-size:14px;
+    line-height:1.7;
+  }
+
+  .actions{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    gap:12px;
+  }
+
+  .actions .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  /* ALL MAIN GRIDS → ONE COLUMN */
+  .story,
+  .planner,
+  .services,
+  .menu-grid,
+  .gallery,
+  .photo-grid,
+  .card-grid,
+  .package-grid,
+  .team-grid,
+  .testimonial-grid,
+  .faq-grid,
+  .details-grid,
+  .enquiry-form{
+    grid-template-columns:1fr !important;
+    width:100%;
+  }
+
+  /* SECTIONS */
+  .section,
+  .full-section{
+    width:100%;
+    padding:65px 6%;
+  }
+
+  .section h2,
+  .full-section h2{
+    font-size:clamp(30px,9vw,46px);
+    line-height:1.1;
+  }
+
+  /* GALLERY */
+  .gallery{
+    grid-template-rows:auto !important;
+  }
+
+  .gallery-item.large{
+    grid-row:auto !important;
+  }
+
+  /* CARDS */
+  .card,
+  .package,
+  .team-card,
+  .testimonial,
+  .faq,
+  .detail,
+  .contact-panel{
+    width:100%;
+    max-width:100%;
+  }
+
+  /* IMAGES */
+  img{
+    max-width:100%;
+  }
+
+  /* CONTACT */
+  .contact-panel{
+    padding:20px;
+  }
+
+  .details-grid{
+    gap:10px;
+  }
+
+  .detail{
+    padding:18px;
+    overflow-wrap:anywhere;
+  }
+
+  /* SOCIAL LINKS */
+  .social-row{
+    justify-content:center;
+  }
+
+  .social{
+    text-align:center;
+  }
+
+  /* MAP */
+  .map{
+    width:100%;
+    min-height:0;
+    padding:0;
+    overflow:hidden;
+  }
+
+  .map iframe{
+    display:block;
+    width:100%;
+    height:300px;
+    border:0;
+  }
+
+  /* FORM */
+  .enquiry-form{
+    gap:12px;
+  }
+
+  .enquiry-form input,
+  .enquiry-form select,
+  .enquiry-form textarea{
+    width:100%;
+    min-width:0;
+    font-size:16px;
+  }
+
+  .enquiry-form textarea,
+  .enquiry-form button{
+    grid-column:auto !important;
+  }
+
+  .enquiry-form button{
+    width:100%;
+    min-height:50px;
+  }
+
+  /* CTA */
+  .cta{
+    padding:75px 6%;
+  }
+
+  .cta h2{
+    font-size:clamp(30px,9vw,44px);
+  }
+
+  /* FOOTER */
+  footer{
+    display:block;
+    text-align:center;
+    padding:35px 6%;
+  }
+
+  footer div{
+    margin:8px 0;
+  }
+
+  /* WHATSAPP */
+  .whatsapp{
+    width:54px;
+    height:54px;
+    right:15px;
+    bottom:15px;
+  }
+}
+
+@media (max-width:380px){
+
+  .navlinks{
+    gap:7px 11px;
+  }
+
+  .navlinks li a{
+    font-size:10px;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .section,
+  .full-section{
+    padding-left:5%;
+    padding-right:5%;
+  }
+}</style>
 </head>
 
 <body>
