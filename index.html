@@ -1566,6 +1566,127 @@ footer{
     min-width:0;
     max-width:100%;
   }
+}/* FINAL PHONE READABILITY FIX */
+@media screen and (max-width: 650px) {
+
+  /* Make normal text readable */
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  /* Main section headings */
+  h2,
+  .section h2,
+  .full-section h2 {
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1.08;
+    letter-spacing: -1px;
+    margin-bottom: 22px;
+  }
+
+  /* Small section labels */
+  .kicker,
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+
+  /* Service cards: two columns */
+  .services {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1px;
+  }
+
+  .service {
+    min-height: 230px;
+    padding: 16px 12px;
+  }
+
+  .service-number {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .service h3 {
+    font-size: 22px;
+    line-height: 1.25;
+    margin-top: 65px;
+  }
+
+  .service p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Menu cards */
+  .menu-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1px;
+  }
+
+  .dish {
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .dish h3 {
+    font-size: 21px;
+    line-height: 1.35;
+  }
+
+  .dish p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .dish span {
+    font-size: 13px;
+  }
+
+  /* Paragraphs */
+  .lead,
+  .card p,
+  .package p,
+  .team-card p,
+  .testimonial p,
+  .faq p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* Navigation */
+  .navlinks {
+    gap: 12px 16px;
+  }
+
+  .navlinks li a {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* Menu filter buttons */
+  .tab {
+    font-size: 14px;
+    padding: 11px 15px;
+  }
+
+  /* Prevent narrow-screen overflow */
+  .inner,
+  .service,
+  .dish,
+  .card,
+  .package {
+    min-width: 0;
+  }
+
+  /* Contact form text */
+  .enquiry-form input,
+  .enquiry-form select,
+  .enquiry-form textarea {
+    font-size: 16px;
+  }
 }</style>
 </head>
 
